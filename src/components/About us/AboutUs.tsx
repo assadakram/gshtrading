@@ -13,7 +13,6 @@ const AboutUs = () => {
       <div className="flex justify-center mb-6 md:mb-0">
         <Image src={welcome} width={370} alt="Welcome" className="object-cover   pr-6 md:pr-0" />
       </div>
-
       <div className="flex flex-col space-y-4 md:max-w-md ">
         <span className="text-purpleCustom uppercase font-bold text-center md:text-left">
           About Us
@@ -28,11 +27,7 @@ const AboutUs = () => {
           scrambled it to make a type specimen book. It has survived not only five.
         </p>
         <div className="flex justify-center md:pt-7 md:justify-start">
-  
-            
               <Readmore />
-            
-          
         </div>
       </div>
     </div>
