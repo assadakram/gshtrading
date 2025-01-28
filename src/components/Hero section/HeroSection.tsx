@@ -30,7 +30,7 @@ const HeroSection = () => {
           alt="Transport illustration"
           width={400}
           height={500}
-          className="object-cover"
+          className="object-cover text-purpleCustom "
         />
       </div>
     </div>

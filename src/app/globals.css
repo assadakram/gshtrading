@@ -7,13 +7,14 @@ html {
 }
 
 :root {
-  --purple:#8e27ee; 
+  --background: #ffffff;
+  --foreground: #000000;
+  --purple: #0cb7f1f6;
+  --orange: rgb(255, 45, 45);
+  
   
 }
-:root {
-  --orange:#FF9800; 
-  
-}
+
 
 body {
   color: var(--foreground);

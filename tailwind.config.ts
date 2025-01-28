@@ -17,6 +17,7 @@ const config: Config = {
         foreground: "var(--foreground)",
         purpleCustom: "var(--purple)",
         orange: "var(--orange)",
+        customBlue: '#7C4DFF',
       },
     },
   },

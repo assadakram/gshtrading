@@ -36,8 +36,12 @@ const ClientReview = () => {
             <p className="md:mb-4 text-sm font-light leading-5">
               {testimonial.message}
             </p>
-            <span className="absolute right-4 -top-7 text-5xl animate-pulse">
-              <Image src={Quotes} alt="Quotes" />
+            <span className="absolute right-4 -top-5 text-5xl animate-pulse ">
+              <Image
+               src={Quotes}
+                alt="Quotes"
+                width={40}
+                />
             </span>
           </div>
         ))}

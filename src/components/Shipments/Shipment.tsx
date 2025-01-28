@@ -5,13 +5,12 @@ import shipment from "../../../public/package_2.svg"
 import review from "../../../public/rate_review.svg"
 
 const Shipment = () => {
-  
   return (
-    <div className=" max-w-screen-lg mx-auto flex px-4 md:px-8  flex-col md:gap-8 md:flex-row items-start md:items-center justify-between   font-lexend">
+    <div className="max-w-screen-lg mx-auto flex px-4 md:px-8  flex-col md:gap-8 md:flex-row items-start md:items-center justify-between   font-lexend">
       <div className="md:w-1/2">
         <p className="text-orange-500 font-bold uppercase text-orange">Some Facts</p>
         <h1 className="text-2xl md:text-2xl font-bold mt-2 mb-4 uppercase">
-          #1 Place to Manage All of Your Shipments
+        &#35;1 Place to Manage All of Your Shipments
         </h1>
         <p className="md:text-lg font-light md:text-left text-justify md:mt-8 leading-7 ">
           Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -30,8 +29,6 @@ const Shipment = () => {
         <p className="text-sm font-medium text-gray-800">Happy Clients</p>
         </div>
       </div>
-
-      
       <div className="flex flex-col items-center justify-center w-56 py-2 rounded-xl shadow-[0_0px_10px_rgba(0,_0,_0,_0.3)]">
       <Image
         src={shipment}
@@ -55,5 +52,4 @@ const Shipment = () => {
     </div>
   );
 };
-
 export default Shipment;

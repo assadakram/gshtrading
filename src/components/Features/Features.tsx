@@ -29,6 +29,7 @@ const Features = () => {
               src={world}
               alt="diversity"
               width={30}
+              className="text-purpleCustom"
             />
             <div>
               <p className="text-sm font-light">Worldwide Service</p>

@@ -1,6 +1,6 @@
-<svg width="495" height="473" viewBox="0 0 495 473" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<path d="M455 166.236C455 294.474 395.433 398.432 267.195 398.432C138.957 398.432 35 294.474 35 166.236C35 37.9986 128.03 0 256.268 0C384.506 0 455 37.9986 455 166.236Z" fill="#7C4DFF" style="fill:#7C4DFF;fill:color(display-p3 0.4863 0.3020 1.0000);fill-opacity:1;"/>
-<path d="M490 202.236C490 330.474 430.433 434.432 302.195 434.432C173.957 434.432 70 330.474 70 202.236C70 73.9986 163.03 36 291.268 36C419.506 36 490 73.9986 490 202.236Z" fill="#7C4DFF" style="fill:#7C4DFF;fill:color(display-p3 0.4863 0.3020 1.0000);fill-opacity:1;"/>
+<svg width="495" height="473" viewBox="0 0 495 473" fill="none"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<path d="M455 166.236C455 294.474 395.433 398.432 267.195 398.432C138.957 398.432 35 294.474 35 166.236C35 37.9986 128.03 0 256.268 0C384.506 0 455 37.9986 455 166.236Z" fill="#FF0000" style="fill:#FF0000;fill-opacity:1;"/>
+<path d="M490 202.236C490 330.474 430.433 434.432 302.195 434.432C173.957 434.432 70 330.474 70 202.236C70 73.9986 163.03 36 291.268 36C419.506 36 490 73.9986 490 202.236Z" fill="#FF0000" style="fill:;fill-opacity:1;"/>
 <path d="M490 202.236C490 330.474 430.433 434.432 302.195 434.432C173.957 434.432 70 330.474 70 202.236C70 73.9986 163.03 36 291.268 36C419.506 36 490 73.9986 490 202.236Z" fill="url(#pattern0_1_361)" style=""/>
 <defs>
 <pattern id="pattern0_1_361" patternContentUnits="objectBoundingBox" width="1" height="1">

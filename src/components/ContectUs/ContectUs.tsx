@@ -12,7 +12,7 @@ const ContectUs = () => {
     >
       
       <div className="text-center md:text-left mb-8 md:mb-0">
-        <h4 className="text-purple-600 font-bold text-sm uppercase ">
+        <h4 className="text-purpleCustom font-bold text-sm uppercase ">
           Get A Quote
         </h4>
         <h2 className="text-3xl font-bold md:text-3xl my-2 uppercase leading-tight">
@@ -27,7 +27,7 @@ const ContectUs = () => {
         <div className="flex items-center gap-3 mt-6 justify-center md:justify-start">
           <Image src={call} alt="call" width={60} height={60} />
           <div className="flex flex-col gap-1">
-            <p className="text-purple-600 text-sm font-medium">
+            <p className="text-purpleCustom text-sm font-medium">
               Call for any query!
             </p>
             <p className="text-xl font-semibold">+1 (229) 555-0109</p>

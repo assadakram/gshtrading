@@ -11,7 +11,7 @@ const AboutUs = () => {
     >
 
       <div className="flex justify-center mb-6 md:mb-0">
-        <Image src={welcome} width={370} alt="Welcome" className="object-cover   pr-6 md:pr-0" />
+        <Image src={welcome} width={370} alt="Welcome" className="object-cover text-purpleCustom   pr-6 md:pr-0" />
       </div>
 
       <div className="flex flex-col space-y-4 md:max-w-md ">

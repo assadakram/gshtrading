@@ -20,7 +20,7 @@ const Services = () => {
         {ServicesData.map((service, index) => (
           <div
             key={index}
-            className="group  border p-6 font-lexend transition-all duration-500 ease-in-out shadow-[0_0px_5px_rgba(0,_0,_0,_0.4)]  rounded-lg overflow-hidden  bg-white   hover:bg-purple-500"
+            className="group  border p-6 font-lexend transition-all duration-500 ease-in-out shadow-[0_0px_5px_rgba(0,_0,_0,_0.4)]  rounded-lg overflow-hidden  bg-white   hover:bg-purpleCustom"
           >
             <div className="relative mb-4 flex justify-center">
               <Image

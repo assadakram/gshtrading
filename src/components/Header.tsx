@@ -8,23 +8,36 @@ import { FiMenu, FiX } from "react-icons/fi";
 const Header = () => {
   const [activeLink, setActiveLink] = useState("Home");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const handleLinkClick = (linkName:string) => {
+
+  const handleLinkClick = (linkName: string, href: string) => {
     setActiveLink(linkName);
-    if (isMenuOpen) setIsMenuOpen(false); 
+    if (isMenuOpen) setIsMenuOpen(false);
+
+    const section = document.querySelector(href);
+    if (section) {
+      const headerOffset = 80; 
+      const elementPosition = section.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
   };
 
   const navLinks = [
-    { name: "Home", href: "/" },
-    { name: "About Us", href: "/#about-us" },
-    { name: "Products", href: "/#services" },
-    { name: "Career", href: "/#Features" },
-    { name: "Contact Us", href: "/#contect-us" },
+    { name: "Home", href: "#hero" },
+    { name: "About Us", href: "#about" },
+    { name: "Products", href: "#services" },
+    { name: "Career", href: "#features" },
+    { name: "Contact Us", href: "#contact" },
   ];
 
   return (
     <header className="bg-white font-lexend py-4 border-b border-black sticky top-0 z-50">
       <div className="max-w-screen-lg mx-auto px-8 flex items-center justify-between">
-        <Link href="/"  className="flex items-center space-x-2">
+        <Link href="/" className="flex items-center space-x-2">
           <Image
             src={logo}
             alt="Logo"
@@ -44,11 +57,14 @@ const Header = () => {
           className={`hidden md:flex md:flex-row md:items-center md:space-x-8 text-xs font-lexend font-normal uppercase`}
         >
           {navLinks.map(({ name, href }) => (
-            <Link
+            <a
               key={name}
               href={href}
               className={`relative ${activeLink === name ? "text-black" : "text-black"} transition-all duration-500`}
-              onClick={() => handleLinkClick(name)}
+              onClick={(e) => {
+                e.preventDefault();
+                handleLinkClick(name, href);
+              }}
             >
               {name}
               <span
@@ -56,7 +72,7 @@ const Header = () => {
                   activeLink === name ? "bg-orange" : "bg-transparent"
                 }`}
               ></span>
-            </Link>
+            </a>
           ))}
         </nav>
       </div>
@@ -66,11 +82,14 @@ const Header = () => {
       >
         <nav className="flex flex-col items-center space-y-7 text-white text-lg font-lexend uppercase">
           {navLinks.map(({ name, href }) => (
-            <Link
+            <a
               key={name}
               href={href}
               className={`relative ${activeLink === name ? "text-white" : "text-white"} transition-all duration-300`}
-              onClick={() => handleLinkClick(name)}
+              onClick={(e) => {
+                e.preventDefault();
+                handleLinkClick(name, href);
+              }}
             >
               {name}
               <span
@@ -78,7 +97,7 @@ const Header = () => {
                   activeLink === name ? "bg-orange" : "bg-transparent"
                 }`}
               ></span>
-            </Link>
+            </a>
           ))}
         </nav>
       </div>
