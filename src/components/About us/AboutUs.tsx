@@ -1,6 +1,5 @@
 import React from "react";
-import Image from "next/image";
-import welcome from "../../../public/Welcome Img.svg";
+import { Welcome } from "../../../public/SvgComponent";
 import Readmore from "../Button/Readmore";
 
 const AboutUs = () => {
@@ -11,7 +10,8 @@ const AboutUs = () => {
     >
 
       <div className="flex justify-center mb-6 md:mb-0">
-        <Image src={welcome} width={370} alt="Welcome" className="object-cover text-purpleCustom   pr-6 md:pr-0" />
+        <Welcome  className="text-orange object-cover pr-6 md:pr-0 "/>
+        {/* <Image src={welcome} width={370} alt="Welcome" className="object-cover text-purpleCustom   pr-6 md:pr-0" /> */}
       </div>
 
       <div className="flex flex-col space-y-4 md:max-w-md ">

@@ -2,10 +2,7 @@
 
 import React from "react";
 import {  FaArrowUp, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
-import Image from "next/image";
-import distance from "../../public/distance.svg"
-import call from "../../public/call.svg"
-import mail from "../../public/mail.svg"
+import { CallMe, Distance, Mail } from "../../public/SvgComponent";
 
 const Footer = () => {
   return (
@@ -15,27 +12,32 @@ const Footer = () => {
           <h3 className="font-bold text-lg mb-4">ADDRESS</h3>
           <ul className="md:space-y-7 text-sm ">
             <li className="flex items-center gap-2">
-              <Image
+              <Distance className="text-purpleCustom"/>
+              {/* <Image
               src={distance}
               alt="distance"
               width={25}
-              />
+              /> */}
               <span >2464 Royal Ln. Mesa, <br/> New Jersey 45463</span>
             </li>
             <li className="flex items-center gap-2">
-            <Image
+            <CallMe className="text-purpleCustom"/>
+            
+            {/* <Image
               src={call}
               alt="call"
               width={25}
-              />
+              /> */}
               <span>(229) 555-0109</span>
             </li>
             <li className="flex items-center gap-2">
-            <Image
+           <Mail className="text-purpleCustom"/>
+           
+            {/* <Image
               src={mail}
               alt="mail"
               width={25}
-              />
+              /> */}
               <span className="lowercase">saad.hk46@gmail.com</span>
             </li>
           </ul>
@@ -99,6 +101,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      
     </footer>
   );
 };

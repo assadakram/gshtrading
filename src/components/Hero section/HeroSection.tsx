@@ -1,13 +1,13 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
-import transport from "../../../public/Banner Clipart.svg";
+
 import Button from "../Button/Button";
+import { Transport } from "../../../public/SvgComponent";
 
 const HeroSection = () => {
   return (
-    <div className="flex flex-col md:flex-row  mt-12 items-center md:justify-between max-w-screen-lg mx-auto bg-white px-4 md:px-8">
+    <div className="flex flex-col md:flex-row  mt-12 md:mt-0 items-center md:justify-between max-w-screen-lg mx-auto bg-white px-4 md:px-8">
       <div className="flex flex-col  space-y-4 font-lexend max-w-md ">
         <span className="text-purpleCustom font-medium text-sm uppercase">
           Transport & Logistics Solutions
@@ -25,13 +25,14 @@ const HeroSection = () => {
         </div>
       </div>
       <div className="flex justify-end">
-        <Image
+        <Transport className="text-purpleCustom object-cover"/>
+        {/* <Image
           src={transport}
           alt="Transport illustration"
           width={400}
           height={500}
-          className="object-cover text-purpleCustom "
-        />
+          className="object-cover  "
+        /> */}
       </div>
     </div>
   );

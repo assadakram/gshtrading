@@ -1,9 +1,10 @@
+"use client"
 import React from "react";
 import Image from "next/image";
 import rectangle from "../../../public/Rectangle 13.svg";
 import support from "../../../public/support_agent.svg";
-import deployed from "../../../public/deployed_code_history.svg";
-import world from "../../../public/public.svg";
+// import world from "../../../public/public.svg";
+import {  Deployed, Support, World } from "../../../public/SvgComponent";
 
 const Features = () => {
   return (
@@ -25,34 +26,39 @@ const Features = () => {
         </span>
         <div className="flex flex-wrap gap-5 md:mt-4 justify-center md:justify-start">
           <div className="flex flex-col items-center justify-center w-full md:w-52 py-3 md:gap-3 gap-2 rounded-lg shadow-[0_0px_10px_rgba(0,_0,_0,_0.3)]">
-            <Image
+            <World className="text-orange object-cover"/>
+            {/* <Image
               src={world}
               alt="diversity"
               width={30}
               className="text-purpleCustom"
-            />
+            /> */}
             <div>
               <p className="text-sm font-light">Worldwide Service</p>
             </div>
           </div>
 
           <div className="flex flex-col items-center justify-center w-full md:w-52 py-3 rounded-xl md:gap-3 gap-2 shadow-[0_0px_10px_rgba(0,_0,_0,_0.3)]">
-            <Image
+            <Deployed className="text-orange object-cover"/>
+            
+            {/* <Image
               src={deployed}
               alt="shipment"
               width={30}
-            />
+            /> */}
             <div>
               <p className="text-sm font-light">On Time Delivery</p>
             </div>
           </div>
 
           <div className="flex flex-col items-center justify-center w-full md:w-52 md:gap-3 gap-2 py-3 bg-white rounded-lg shadow-[0_0px_10px_rgba(0,_0,_0,_0.3)]">
-            <Image
+            
+            <Support className="text-orange object-contain"/>
+            {/* <Image
               src={support}
               alt="review"
               width={30}
-            />
+            /> */}
             <div>
               <p className="text-sm font-light">24/7 Telephone Support</p>
             </div>

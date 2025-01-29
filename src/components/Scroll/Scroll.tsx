@@ -31,7 +31,7 @@ const ScrollToTopArrow: React.FC = () => {
   return (
     <button
       onClick={handleClick}
-      className={`fixed bottom-8 right-8 ${
+      className={`fixed bottom-8 right-8  ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
       }  bg-purpleCustom text-white w-12 h-12 flex items-center justify-center rounded-md shadow-md transition-all duration-300`}
       aria-label={`Scroll ${scrollDirection === "up" ? "to top" : "to bottom"}`}

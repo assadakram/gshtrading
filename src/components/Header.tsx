@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import logo from "../../public/Logo.svg";
 import { FiMenu, FiX } from "react-icons/fi"; 
+import { Logo } from "../../public/SvgComponent";
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState("Home");
@@ -38,13 +39,14 @@ const Header = () => {
     <header className="bg-white font-lexend py-4 border-b border-black sticky top-0 z-50">
       <div className="max-w-screen-lg mx-auto px-8 flex items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
-          <Image
+          <Logo />
+          {/* <Image
             src={logo}
             alt="Logo"
             width={120}
             height={40}
             className="rounded-full"
-          />
+          /> */}
         </Link>
         <button
           className="md:hidden text-black"

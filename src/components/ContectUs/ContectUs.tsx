@@ -1,8 +1,7 @@
 "use client";
 import React from "react";
-import Image from "next/image";
-import call from "../../../public/Frame 17.svg";
 import Submit from "../Button/Submit";
+import { Call } from "../../../public/SvgComponent";
 
 const ContectUs = () => {
   return (
@@ -25,7 +24,8 @@ const ContectUs = () => {
 </p>
 
         <div className="flex items-center gap-3 mt-6 justify-center md:justify-start">
-          <Image src={call} alt="call" width={60} height={60} />
+          <Call className="text-orange"/>
+          {/* <Image src={call} alt="call" width={60} height={60} /> */}
           <div className="flex flex-col gap-1">
             <p className="text-purpleCustom text-sm font-medium">
               Call for any query!
@@ -40,21 +40,21 @@ const ContectUs = () => {
             <input
               type="text"
               placeholder="Name"
-              className="border border-black p-2 h-10 focus:outline-none focus:ring-2 focus:ring-purple-600 "
+              className="border border-black focus:border-white p-2 h-10 focus:outline-none focus:ring-2 focus:text-purpleCustom "
             />
             <input
               type="email"
               placeholder="Email"
-              className="border border-black p-2 h-10 focus:outline-none focus:ring-2 focus:ring-purple-600 "
+              className="border border-black focus:border-white p-2 h-10 focus:outline-none focus:ring-2 focus:text-purpleCustom "
             />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <input
               type="tel"
               placeholder="Phone Number"
-              className="border border-black p-2 h-10 focus:outline-none focus:ring-2 focus:ring-purple-600 "
+              className="border border-black focus:border-white p-2 h-10 focus:outline-none focus:ring-2 focus:text-purpleCustom "
             />
-            <select className="border border-black p-2 h-10 focus:outline-none focus:ring-2 focus:ring-purple-600 ">
+            <select className="border border-black focus:border-white p-2 h-10 focus:outline-none focus:ring-2 focus:text-purpleCustom ">
               <option>Select a Freight</option>
               <option>Freight 1</option>
               <option>Freight 2</option>
@@ -62,7 +62,7 @@ const ContectUs = () => {
           </div>
           <textarea
             placeholder="Message"
-            className="border border-black p-2 h-24 w-full focus:outline-none focus:ring-2 focus:ring-purple-600  resize-none"
+            className="border border-black focus:border-white p-2 h-24 w-full focus:outline-none focus:ring-2 focus:text-purpleCustom  resize-none"
           ></textarea>
             <Submit/>
         </form>
