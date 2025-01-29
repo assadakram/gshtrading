@@ -8,7 +8,7 @@ const Submit = () => {
      
       <div className="absolute inset-0 bg-black translate-x-2 translate-y-2 "></div>
 
-      <button className="relative bg-purpleCustom text-white font-normal text-sm uppercase px-4 py-2  flex items-center w-full justify-center space-x-2 hover:translate-y-0 hover:translate-x-0 transition-transform duration-200">
+      <button className="relative bg-primary text-white font-normal text-sm uppercase px-4 py-2  flex items-center w-full justify-center space-x-2 hover:translate-y-0 hover:translate-x-0 transition-transform duration-200">
         <span>Submit</span>
         <Image
          src={Arrow}

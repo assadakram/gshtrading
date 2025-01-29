@@ -22,10 +22,11 @@
         "name": "next"
       }
     ],
+    "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./src/*"
-      ]
+      "@public/*": ["./public/*"],
+      "@/*": ["src/*"],
+      "@Data/*": ["data/*"]
     }
   },
   "include": [

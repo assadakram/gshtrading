@@ -1,15 +1,14 @@
 "use client";
 
-import { ServicesData } from "./ServicesData";
+import { ServicesData } from "@/components/Data/ServicesData";
 import Image from "next/image";
 import React from "react";
-import Readmore from "../Button/Readmore";
-
+import Readmore from "@/components/Button/Readmore";
 const Services = () => {
   return (
     <div className="container p-4 md-p-0  font-lexend">
       <div className="flex flex-col items-center font-lexend px-2 md:px-0  gap-2 max-w-screen-md mx-auto mb-8 ">
-        <span className="text-purpleCustom text-base font-semibold">
+        <span className="text-primary text-base font-semibold">
           OUR SERVICES
         </span>
         <span className="text-xl md:text-2xl font-bold text-center">
@@ -20,7 +19,7 @@ const Services = () => {
         {ServicesData.map((service, index) => (
           <div
             key={index}
-            className="group  border p-6 font-lexend transition-all duration-500 ease-in-out shadow-[0_0px_5px_rgba(0,_0,_0,_0.4)]  rounded-lg overflow-hidden  bg-white   hover:bg-purpleCustom"
+            className="group  border p-6 font-lexend transition-all duration-500 ease-in-out shadow-[0_0px_5px_rgba(0,_0,_0,_0.4)]  rounded-lg overflow-hidden  bg-white   hover:bg-primary"
           >
             <div className="relative mb-4 flex justify-center">
               <Image
@@ -38,7 +37,6 @@ const Services = () => {
               <p className="sm:text-sm  md:text-left font-light leading-5 group-hover:text-white  ">
                 {service.discription}
               </p>
-
               <div className="flex justify-center md:justify-start">
                 <Readmore />
               </div>

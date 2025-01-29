@@ -1,13 +1,13 @@
 import React from "react";
-import { testimonials } from "./ClientsData";
+import { testimonials } from "@/components/Data/ClientsData";
 import Image from "next/image";
-import { QuoteC } from "../../../public/SvgComponent";
+import { QuoteC } from "@/components/SvgComponent";
 
 const ClientReview = () => {
   return (
     <div className="font-lexend max-w-screen-lg mx-auto md:flex md:flex-col px-4 md:px-0 md:gap-10  bg-white">
       <div className="flex flex-col items-center gap-2 md:gap-4 mb-10">
-        <span className="text-lg text-orange font-bold">TESTIMONIAL</span>
+        <span className="text-lg text-secondary font-bold">TESTIMONIAL</span>
         <span className="uppercase text-3xl font-bold">Our Clients Say!</span>
       </div>
       <div className="flex flex-wrap gap-8">
@@ -37,12 +37,7 @@ const ClientReview = () => {
               {testimonial.message}
             </p>
             <span className="absolute right-4 -top-5 text-5xl animate-pulse ">
-            <QuoteC className="text-orange"/>
-              {/* <Image
-               src={Quotes}
-                alt="Quotes"
-                width={40}
-                /> */}
+              <QuoteC className="text-secondary" />
             </span>
           </div>
         ))}
