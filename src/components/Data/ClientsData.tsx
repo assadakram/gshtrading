@@ -1,22 +1,19 @@
-import Ellips from "../../../public/Testimonals/Ellipse 4.svg";
-import Ellips2 from "../../../public/Testimonals/Ellipse 4 (1).svg"
-import Ellips3 from "../../../public/Testimonals/Ellipse 4 (2).svg"
-
-
+import Ellips from "@public/Testimonals/Ellipse 4.svg";
+import Ellips2 from "@public/Testimonals/Ellipse 4 (1).svg";
+import Ellips3 from "@public/Testimonals/Ellipse 4 (2).svg";
 interface Testimonial {
   name: string;
   company: string;
   message: string;
-  Image: string; 
+  Image: string;
 }
-
 export const testimonials: Testimonial[] = [
   {
     name: "Leslie Alexander",
     company: "Ferrari",
     message:
       "Aliquam porta nisi dolor, molestie pellentesque elit molestie in. Morbi metus neque, elementum ullam.",
-    Image: Ellips, 
+    Image: Ellips,
   },
   {
     name: "Annette Black",

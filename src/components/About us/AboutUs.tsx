@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import welcome from "../../../public/Welcome Img.svg";
-import Readmore from "../Button/Readmore";
+import welcome from "@public/Welcome Img.svg";
+import Readmore from "@/components/Button/Readmore";
 
 const AboutUs = () => {
   return (
