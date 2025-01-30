@@ -1,5 +1,8 @@
-import React from "react";
-import { Diversity, Reviews, ShipmentImg } from "@/components/SvgComponent";
+import {
+  DiversityIcon,
+  ReviewsIcon,
+  ShipmentIcon,
+} from "@/components/SvgComponent";
 const Shipment = () => {
   return (
     <div className="max-w-screen-lg mx-auto flex px-4 md:px-8  flex-col md:gap-8 md:flex-row items-start md:items-center justify-between    font-lexend">
@@ -17,15 +20,15 @@ const Shipment = () => {
         </p>
       </div>
       <div className="flex flex-wrap justify-center mt-10  md:justify-start gap-5 md:mt-10  ">
-        <div className="flex flex-col items-center justify-center w-56 py-2 rounded-lg shadow-[0_0px_5px_rgba(0,_0,_0,_0.4)]">
-          <Diversity className="text-secondary object-cover" />
+        <div className="flex flex-col items-center justify-center w-56 py-2 rounded-lg shadow-custom">
+          <DiversityIcon className="text-secondary object-cover" />
           <div className="mt-4 flex gap-2 text-sm font-bold text-secondary">
             100
             <p className="text-sm font-medium text-gray-800">Happy Clients</p>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center w-56 py-2 rounded-xl shadow-[0_0px_5px_rgba(0,_0,_0,_0.4)]">
-          <ShipmentImg className="text-secondary object-cover" />
+        <div className="flex flex-col items-center justify-center w-56 py-2 rounded-xl shadow-custom">
+          <ShipmentIcon className="text-secondary object-cover" />
           <div className=" flex gap-2 mt-4 text-sm font-bold text-secondary">
             10
             <p className="text-sm font-medium text-gray-800">
@@ -33,8 +36,8 @@ const Shipment = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center w-56 py-2 bg-white rounded-lg shadow-[0_0px_5px_rgba(0,_0,_0,_0.4)]">
-          <Reviews className="text-secondary object-cover" />
+        <div className="flex flex-col items-center justify-center w-56 py-2 bg-white rounded-lg shadow-custom">
+          <ReviewsIcon className="text-secondary object-cover" />
           <div className="flex mt-4 gap-2 text-sm font-bold text-secondary-500 text-secondary">
             4
             <p className="text-sm font-medium text-gray-800">

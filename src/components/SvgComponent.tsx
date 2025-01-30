@@ -1,14 +1,10 @@
-"use client";
 interface WelcomeProps {
   className?: string;
   color?: string;
   width?: string | number;
   map?: string;
 }
-export const Logo: React.FC<WelcomeProps> = ({
-  className,
-  color = "currentColor",
-}) => {
+export const Logo: React.FC<WelcomeProps> = ({ className }) => {
   return (
     <>
       <svg
@@ -183,7 +179,7 @@ export const Welcome: React.FC<WelcomeProps> = ({
   );
 };
 
-export const Diversity: React.FC<WelcomeProps> = ({
+export const DiversityIcon: React.FC<WelcomeProps> = ({
   className,
   color = "currentColor",
 }) => {
@@ -206,7 +202,7 @@ export const Diversity: React.FC<WelcomeProps> = ({
   );
 };
 
-export const ShipmentImg: React.FC<WelcomeProps> = ({
+export const ShipmentIcon: React.FC<WelcomeProps> = ({
   className,
   color = "currentColor",
 }) => {
@@ -250,7 +246,7 @@ export const ShipmentImg: React.FC<WelcomeProps> = ({
   );
 };
 
-export const Reviews: React.FC<WelcomeProps> = ({
+export const ReviewsIcon: React.FC<WelcomeProps> = ({
   className,
   color = "currentColor",
 }) => {
@@ -292,7 +288,7 @@ export const Reviews: React.FC<WelcomeProps> = ({
   );
 };
 
-export const World: React.FC<WelcomeProps> = ({
+export const WorldIcon: React.FC<WelcomeProps> = ({
   className,
   color = "currentColor",
 }) => {
@@ -315,7 +311,7 @@ export const World: React.FC<WelcomeProps> = ({
     </>
   );
 };
-export const Deployed: React.FC<WelcomeProps> = ({
+export const DeployedIcon: React.FC<WelcomeProps> = ({
   className,
   color = "currentColor",
 }) => {
@@ -338,7 +334,7 @@ export const Deployed: React.FC<WelcomeProps> = ({
     </>
   );
 };
-export const Support: React.FC<WelcomeProps> = ({
+export const SupportIcon: React.FC<WelcomeProps> = ({
   className,
   color = "currentColor",
 }) => {
@@ -1710,7 +1706,7 @@ export const Transport: React.FC<WelcomeProps> = ({
     </>
   );
 };
-export const Call: React.FC<WelcomeProps> = ({
+export const CallIcon: React.FC<WelcomeProps> = ({
   className,
   color = "currentColor",
 }) => {
@@ -1800,7 +1796,7 @@ export const Call: React.FC<WelcomeProps> = ({
     </>
   );
 };
-export const Distance: React.FC<WelcomeProps> = ({
+export const DistanceIcon: React.FC<WelcomeProps> = ({
   className,
   color = "currentColor",
 }) => {
@@ -1847,7 +1843,7 @@ export const Distance: React.FC<WelcomeProps> = ({
   );
 };
 
-export const CallMe: React.FC<WelcomeProps> = ({
+export const CallMeIcon: React.FC<WelcomeProps> = ({
   className,
   color = "currentColor",
 }) => {
@@ -1894,7 +1890,7 @@ export const CallMe: React.FC<WelcomeProps> = ({
   );
 };
 
-export const Mail: React.FC<WelcomeProps> = ({
+export const MailIcon: React.FC<WelcomeProps> = ({
   className,
   color = "currentColor",
 }) => {
@@ -1941,7 +1937,7 @@ export const Mail: React.FC<WelcomeProps> = ({
   );
 };
 
-export const QuoteC: React.FC<WelcomeProps> = ({
+export const QuoteIcon: React.FC<WelcomeProps> = ({
   className,
   color = "currentColor",
 }) => {
@@ -1966,11 +1962,11 @@ export const QuoteC: React.FC<WelcomeProps> = ({
     </>
   );
 };
-export const Services: React.FC<WelcomeProps> = ({ className }) => {
+export const ServicesIcon: React.FC<WelcomeProps> = ({ className }) => {
   return (
     <>
       <svg
-      className={className}
+        className={className}
         width="900"
         height="auto"
         viewBox="0 0 900 556"
@@ -1983,7 +1979,7 @@ export const Services: React.FC<WelcomeProps> = ({ className }) => {
             d="M0 8H622C771.117 8 892 128.883 892 278C892 427.117 771.117 548 622 548H0V8Z"
             fill="#D9D9D9"
             style={{
-              fill:"#D9D9D9",
+              fill: "#D9D9D9",
               fillOpacity: 1,
             }}
           />

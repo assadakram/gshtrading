@@ -15,6 +15,10 @@ const config: Config = {
         foreground: "var(--foreground)",
         primary: "var(--primary)",
         secondary: "var(--secondary)",
+        shadow:"var(--shadow)",
+      },
+      boxShadow: {
+        custom: "var(--shadow)",
       },
     },
   },

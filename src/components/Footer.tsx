@@ -1,8 +1,5 @@
-"use client";
-
-import React from "react";
 import { FaArrowUp, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { CallMe, Distance, Mail } from "@/components/SvgComponent";
+import { CallMeIcon, DistanceIcon, MailIcon } from "@/components/SvgComponent";
 const Footer = () => {
   return (
     <footer className="bg-black font-lexend py-8  ">
@@ -11,17 +8,17 @@ const Footer = () => {
           <h3 className="font-bold text-lg mb-4">ADDRESS</h3>
           <ul className="md:space-y-7 text-sm space-y-3 ">
             <li className="flex items-center gap-2">
-              <Distance className="text-primary" />
+              <DistanceIcon className="text-primary" />
               <span>
                 2464 Royal Ln. Mesa, <br /> New Jersey 45463
               </span>
             </li>
             <li className="flex items-center gap-2">
-              <CallMe className="text-primary" />
+              <CallMeIcon className="text-primary" />
               <span>(229) 555-0109</span>
             </li>
             <li className="flex items-center gap-2">
-              <Mail className="text-primary" />
+              <MailIcon className="text-primary" />
               <span className="lowercase">saad.hk46@gmail.com</span>
             </li>
           </ul>

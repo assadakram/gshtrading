@@ -1,8 +1,5 @@
-"use client";
-
-import React from "react";
-import Button from "@/components/Button/Button";
 import { Transport } from "@/components/SvgComponent";
+import Readmore from "@/components/Button/Readmore";
 const HeroSection = () => {
   return (
     <div className="flex flex-col md:flex-row  mt-12 md:-mt-6 items-center md:justify-between max-w-screen-lg mx-auto bg-white px-4 md:px-8">
@@ -18,7 +15,7 @@ const HeroSection = () => {
           We are transforming challenges into success.
         </p>
         <div className="flex justify-center md:justify-start">
-          <Button />
+          <Readmore className="bg-primary" />
         </div>
       </div>
       <div className="flex justify-end">

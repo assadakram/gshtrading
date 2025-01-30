@@ -1,6 +1,3 @@
-"use client";
-
-import React from "react";
 import { Welcome } from "@/components/SvgComponent";
 import Readmore from "@/components/Button/Readmore";
 const AboutUs = () => {
@@ -27,7 +24,7 @@ const AboutUs = () => {
           five.
         </p>
         <div className="flex justify-center md:pt-7 md:justify-start">
-          <Readmore />
+          <Readmore className="bg-secondary" />
         </div>
       </div>
     </div>

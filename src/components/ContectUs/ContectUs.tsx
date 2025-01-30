@@ -1,13 +1,11 @@
-"use client";
-
-import React from "react";
-import Submit from "@/components/Button/Submit";
-import { Call } from "@/components/SvgComponent";
+import { CallIcon } from "@/components/SvgComponent";
+import Readmore from "@/components/Button/Readmore";
 const ContectUs = () => {
   return (
     <div
       id="contect-us"
-      className="flex max-w-screen-lg mx-auto  flex-col md:flex-row items-center justify-between md:px-8 py-10 bg-white font-lexend">
+      className="flex max-w-screen-lg mx-auto  flex-col md:flex-row items-center justify-between md:px-8 py-10 bg-white font-lexend"
+    >
       <div className="text-center md:text-left mb-8 md:mb-0">
         <h4 className="text-primary font-bold text-base uppercase ">
           Get A Quote
@@ -22,7 +20,7 @@ const ContectUs = () => {
         </p>
 
         <div className="flex items-center gap-3 mt-6 justify-center md:justify-start">
-          <Call className="text-secondary" />
+          <CallIcon className="text-secondary" />
           <div className="flex flex-col gap-1">
             <p className="text-primary text-sm font-medium">
               Call for any query!
@@ -31,7 +29,7 @@ const ContectUs = () => {
           </div>
         </div>
       </div>
-      <div className="md:w-1/2 bg-white p-6 shadow-[0_0px_5px_rgba(0,_0,_0,_0.4)] rounded-lg">
+      <div className="md:w-1/2 bg-white p-6 shadow-custom rounded-lg">
         <form className="space-y-5">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ">
             <input
@@ -61,7 +59,7 @@ const ContectUs = () => {
             placeholder="Message"
             className="border border-black focus:border-white p-2 h-24 w-full focus:outline-none focus:ring-2 focus:text-primary  resize-none"
           ></textarea>
-          <Submit />
+          <Readmore className="bg-primary w-full" label="Submit" />
         </form>
       </div>
     </div>

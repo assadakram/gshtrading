@@ -1,5 +1,3 @@
-"use client";
-
 import agriculture from "@public/Services/Rectangle 12 (5).svg";
 import machinery from "@public/Services/Rectangle 12 (6).svg";
 import industrial from "@public/Services/Rectangle 12 (7).svg";

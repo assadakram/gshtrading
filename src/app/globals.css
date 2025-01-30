@@ -3,13 +3,15 @@
 @tailwind utilities;
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 5rem; 
 }
 
 :root {
   --background: #ffffff;
   --foreground: #000000;
   --primary: #0ab6f0f6;
-  --secondary: rgb(250, 27, 27);
+  --secondary: #FA1B1B;
+   --shadow: 0 0px 5px rgba(0, 0, 0, 0.4);
 }
 
 body {

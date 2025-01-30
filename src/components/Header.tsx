@@ -4,32 +4,17 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import { Logo } from "@/components/SvgComponent";
-
 const Header = () => {
   const [activeLink, setActiveLink] = useState("Home");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const handleLinkClick = (linkName: string, href: string) => {
-    setActiveLink(linkName);
-    if (isMenuOpen) setIsMenuOpen(false);
-    const section = document.querySelector(href);
-    if (section) {
-      const headerOffset = 80;
-      const elementPosition = section.getBoundingClientRect().top;
-      const offsetPosition =
-        elementPosition + window.pageYOffset - headerOffset;
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth",
-      });
-    }
-  };
   const navLinks = [
-    { name: "Home", href: "#hero" },
+    { name: "Home", href: "#home" },
     { name: "About Us", href: "#about" },
-    { name: "Products", href: "#services" },
-    { name: "Career", href: "#features" },
+    { name: "Products", href: "#product" },
+    { name: "Career", href: "#career" },
     { name: "Contact Us", href: "#contact" },
   ];
+
   return (
     <header className="bg-white font-lexend py-4 border-b border-black sticky top-0 z-50">
       <div className="max-w-screen-lg mx-auto px-8 flex items-center justify-between">
@@ -43,20 +28,15 @@ const Header = () => {
         >
           {isMenuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
         </button>
-        <nav
-          className={`hidden md:flex md:flex-row md:items-center md:space-x-8 text-xs font-lexend font-normal uppercase`}
-        >
+        <nav className="hidden md:flex md:flex-row md:items-center md:space-x-8 text-xs font-lexend font-normal uppercase">
           {navLinks.map(({ name, href }) => (
-            <a
+            <Link
               key={name}
               href={href}
               className={`relative ${
                 activeLink === name ? "text-black" : "text-black"
               } transition-all duration-500`}
-              onClick={(e) => {
-                e.preventDefault();
-                handleLinkClick(name, href);
-              }}
+              onClick={() => setActiveLink(name)}
             >
               {name}
               <span
@@ -64,7 +44,7 @@ const Header = () => {
                   activeLink === name ? "bg-secondary" : "bg-transparent"
                 }`}
               ></span>
-            </a>
+            </Link>
           ))}
         </nav>
       </div>
@@ -76,28 +56,29 @@ const Header = () => {
       >
         <nav className="flex flex-col items-center space-y-7 text-white text-lg font-lexend uppercase">
           {navLinks.map(({ name, href }) => (
-            <a
+            <Link
               key={name}
               href={href}
               className={`relative ${
                 activeLink === name ? "text-white" : "text-white"
               } transition-all duration-300`}
-              onClick={(e) => {
-                e.preventDefault();
-                handleLinkClick(name, href);
+              onClick={() => {
+                setActiveLink(name);
+                setIsMenuOpen(false);
               }}
             >
               {name}
               <span
                 className={`absolute bottom-0 left-0 h-[4px] w-full transition-all duration-300 ${
-                  activeLink === name ? "bg-orange" : "bg-transparent"
+                  activeLink === name ? "bg-secondary" : "bg-transparent"
                 }`}
               ></span>
-            </a>
+            </Link>
           ))}
         </nav>
       </div>
     </header>
   );
 };
+
 export default Header;
