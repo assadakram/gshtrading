@@ -15,7 +15,7 @@ const Shipment = () => {
         </h1>
         <p className="md:text-lg font-light md:text-left text-justify md:mt-8 leading-7 ">
           Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever
           since the 1500s.
         </p>
       </div>
