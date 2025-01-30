@@ -1,6 +1,4 @@
-// filepath: /c:/Users/pc/Desktop/first-app/tailwind.config.ts
 import type { Config } from "tailwindcss";
-
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -15,12 +13,15 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        purpleCustom: "var(--purple)",
-        orange: "var(--orange)",
+        primary: "var(--primary)",
+        secondary: "var(--secondary)",
+        shadow:"var(--shadow)",
+      },
+      boxShadow: {
+        custom: "var(--shadow)",
       },
     },
   },
   plugins: [],
 };
-
 export default config;

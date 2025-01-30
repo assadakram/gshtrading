@@ -1,18 +1,17 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 5rem; 
 }
 
 :root {
-  --purple:#8e27ee; 
-  
-}
-:root {
-  --orange:#FF9800; 
-  
+  --background: #ffffff;
+  --foreground: #000000;
+  --primary: #0ab6f0f6;
+  --secondary: #FA1B1B;
+   --shadow: 0 0px 5px rgba(0, 0, 0, 0.4);
 }
 
 body {
