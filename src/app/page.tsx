@@ -29,13 +29,13 @@ export default function Home() {
     sections.forEach((section) => observer.observe(section));
     return () => sections.forEach((section) => observer.unobserve(section));
   }, []);
-  const getVisible = (id: string) => visibleSections.includes(id);
+  const getVisibleSection = (id: string) => visibleSections.includes(id);
   return (
     <div className="flex flex-col gap-7 max-w-screen-xl mx-auto ">
       <div
         id="home"
         className={`animate-section transition-all duration-500 ${
-          getVisible("home") ? "opacity-100" : "opacity-0"
+          getVisibleSection("home") ? "opacity-100" : "opacity-0"
         }`}
       >
         <HeroSection />
@@ -43,7 +43,7 @@ export default function Home() {
       <div
         id="about"
         className={`animate-section transition-transform duration-1000  ${
-          getVisible("about")
+          getVisibleSection("about")
             ? "translate-y-0 opacity-100"
             : "translate-y-2 opacity-0"
         }`}
@@ -53,7 +53,7 @@ export default function Home() {
       <div
         id="shipment"
         className={`animate-section transition-transform duration-1000 ${
-          getVisible("shipment")
+          getVisibleSection("shipment")
             ? "translate-y-0 opacity-100"
             : "translate-y-2 opacity-0"
         }`}
@@ -63,7 +63,7 @@ export default function Home() {
       <div
         id="product"
         className={`animate-section transition-transform duration-500 mt-10 ${
-          getVisible("product")
+          getVisibleSection("product")
             ? "translate-y-0 opacity-100"
             : "translate-y-2 opacity-0"
         }`}
@@ -73,7 +73,7 @@ export default function Home() {
       <div
         id="career"
         className={`animate-section transition-transform duration-1000 mt-10 ${
-          getVisible("career")
+          getVisibleSection("career")
             ? "translate-y-0 opacity-100"
             : "translate-y-2 opacity-0"
         }`}
@@ -83,7 +83,7 @@ export default function Home() {
       <div
         id="contact"
         className={`animate-section px-4 transition-transform duration-1000 ${
-          getVisible("contact")
+          getVisibleSection("contact")
             ? "translate-y-0 opacity-100"
             : "translate-y-2 opacity-0"
         }`}
@@ -93,7 +93,7 @@ export default function Home() {
       <div
         id="reviews"
         className={`animate-section transition-transform duration-1000 ${
-          getVisible("reviews")
+          getVisibleSection("reviews")
             ? "translate-y-0 opacity-100"
             : "translate-y-2 opacity-0"
         }`}

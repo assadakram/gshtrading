@@ -1,6 +1,7 @@
 import { ServicesData } from "@/components/Data/ServicesData";
 import Image from "next/image";
 import Readmore from "@/components/Button/Readmore";
+
 const Services = () => {
   return (
     <div className="container p-4 md-p-0  font-lexend">
@@ -16,7 +17,7 @@ const Services = () => {
         {ServicesData.map((service, index) => (
           <div
             key={index}
-            className="group  border p-6 font-lexend transition-all duration-500 ease-in-out shadow-custom rounded-lg overflow-hidden  bg-white   hover:bg-primary"
+            className=" border p-6 font-lexend transition-all duration-500 ease-in-out shadow-custom rounded-lg overflow-hidden hover:bg-primary hover:text-white"
           >
             <div className="relative mb-4 flex justify-center">
               <Image
@@ -28,14 +29,12 @@ const Services = () => {
               />
             </div>
             <div className=" flex flex-col  gap-3 mb-4 ">
-              <h3 className="font-bold text-lg  md:text-lg  text-gray-800 group-hover:text-white ">
-                {service.name}
-              </h3>
-              <p className="sm:text-sm  md:text-left font-light leading-5 group-hover:text-white  ">
+              <h3 className="font-bold text-lg  md:text-lg ">{service.name}</h3>
+              <p className="sm:text-sm  md:text-left font-light leading-5">
                 {service.discription}
               </p>
               <div className="flex justify-center md:justify-start">
-                <Readmore className="bg-secondary" />
+                <Readmore className="bg-secondary group-hover:bg-secondary" />
               </div>
             </div>
           </div>

@@ -1,5 +1,6 @@
 import { CallIcon } from "@/components/SvgComponent";
 import Readmore from "@/components/Button/Readmore";
+
 const ContectUs = () => {
   return (
     <div
@@ -49,7 +50,7 @@ const ContectUs = () => {
               placeholder="Phone Number"
               className="border border-black focus:border-white p-2 h-10 focus:outline-none focus:ring-2 focus:text-primary "
             />
-            <select className="border border-black focus:border-white p-2 h-10 focus:outline-none focus:ring-2 focus:text-primary ">
+            <select className="border border-black focus:border-white p-2 h-10 focus:outline-none focus:ring-2  ">
               <option>Select a Freight</option>
               <option>Freight 1</option>
               <option>Freight 2</option>
@@ -59,7 +60,7 @@ const ContectUs = () => {
             placeholder="Message"
             className="border border-black focus:border-white p-2 h-24 w-full focus:outline-none focus:ring-2 focus:text-primary  resize-none"
           ></textarea>
-          <Readmore className="bg-primary w-full" label="Submit" />
+          <Readmore className="bg-blue-500 w-full" label="Submit" />
         </form>
       </div>
     </div>

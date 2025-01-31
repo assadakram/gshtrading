@@ -19,7 +19,7 @@ const Footer = () => {
             </li>
             <li className="flex items-center gap-2">
               <MailIcon className="text-primary" />
-              <span className="lowercase">saad.hk46@gmail.com</span>
+              <span>michael@gmail.com</span>
             </li>
           </ul>
         </div>

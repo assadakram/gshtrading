@@ -15,7 +15,7 @@ const HeroSection = () => {
           We are transforming challenges into success.
         </p>
         <div className="flex justify-center md:justify-start">
-          <Readmore className="bg-primary" />
+          <Readmore className="bg-blue-500" />
         </div>
       </div>
       <div className="flex justify-end">
