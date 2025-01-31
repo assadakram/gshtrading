@@ -1,5 +1,6 @@
 import { FaArrowUp, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { CallMeIcon, DistanceIcon, MailIcon } from "@/components/SvgComponent";
+
 const Footer = () => {
   return (
     <footer className="bg-black font-lexend py-8  ">

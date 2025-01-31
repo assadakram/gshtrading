@@ -4,7 +4,7 @@ import Readmore from "@/components/Button/Readmore";
 
 const Services = () => {
   return (
-    <div className="container p-4 md-p-0  font-lexend">
+    <div className="p-4 md-p-0  font-lexend">
       <div className="flex flex-col items-center font-lexend px-2 md:px-0  gap-2 max-w-screen-md mx-auto mb-8 ">
         <span className="text-primary text-base font-semibold">
           OUR SERVICES
@@ -17,7 +17,7 @@ const Services = () => {
         {ServicesData.map((service, index) => (
           <div
             key={index}
-            className=" border p-6 font-lexend transition-all duration-500 ease-in-out shadow-custom rounded-lg overflow-hidden hover:bg-primary hover:text-white"
+            className=" border p-6 font-lexend transition-all duration-700 ease-in-out shadow-custom rounded-lg  hover:bg-backgroundShadow hover:text-white"
           >
             <div className="relative mb-4 flex justify-center">
               <Image
@@ -25,7 +25,7 @@ const Services = () => {
                 alt={service.name}
                 width={300}
                 height={40}
-                className=" object-cover"
+                className=" object-cover transform transition-all duration-700 hover:scale-105"
               />
             </div>
             <div className=" flex flex-col  gap-3 mb-4 ">

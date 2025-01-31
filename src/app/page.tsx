@@ -44,8 +44,8 @@ export default function Home() {
         id="about"
         className={`animate-section transition-transform duration-1000  ${
           getVisibleSection("about")
-            ? "translate-y-0 opacity-100"
-            : "translate-y-2 opacity-0"
+            ? "translate-y-0"
+            : "translate-y-7 opacity-0"
         }`}
       >
         <AboutUs />
@@ -55,17 +55,17 @@ export default function Home() {
         className={`animate-section transition-transform duration-1000 ${
           getVisibleSection("shipment")
             ? "translate-y-0 opacity-100"
-            : "translate-y-2 opacity-0"
+            : "translate-y-7 opacity-0"
         }`}
       >
         <Shipment />
       </div>
       <div
         id="product"
-        className={`animate-section transition-transform duration-500 mt-10 ${
+        className={`animate-section transition-transform duration-1000 mt-10 ${
           getVisibleSection("product")
             ? "translate-y-0 opacity-100"
-            : "translate-y-2 opacity-0"
+            : "translate-y-7 opacity-0"
         }`}
       >
         <Services />
@@ -85,7 +85,7 @@ export default function Home() {
         className={`animate-section px-4 transition-transform duration-1000 ${
           getVisibleSection("contact")
             ? "translate-y-0 opacity-100"
-            : "translate-y-2 opacity-0"
+            : "translate-y-7 opacity-0"
         }`}
       >
         <ContectUs />
@@ -95,12 +95,12 @@ export default function Home() {
         className={`animate-section transition-transform duration-1000 ${
           getVisibleSection("reviews")
             ? "translate-y-0 opacity-100"
-            : "translate-y-2 opacity-0"
+            : "translate-y-10 opacity-0"
         }`}
       >
         <ClientReview />
       </div>
-      <ScrollToTopArrow />
+      <ScrollToTopArrow className="animate-bounce " />
     </div>
   );
 }

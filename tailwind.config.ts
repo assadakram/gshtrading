@@ -16,11 +16,18 @@ const config: Config = {
         primary: "var(--primary)",
         secondary: "var(--secondary)",
         shadow:"var(--shadow)",
+        backgroundShadow: "var(--backgroundShadow)",
+        
+       
       },
       boxShadow: {
         custom: "var(--shadow)",
+       
+       
       },
+      
     },
+    
   },
   plugins: [],
 };

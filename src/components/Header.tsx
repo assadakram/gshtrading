@@ -21,8 +21,11 @@ const Header = () => {
     const handleScroll = () => {
       navLinks.forEach(({ name, href }) => {
         const section = document.querySelector(href);
-        if (section && section.getBoundingClientRect().top <= 130) {
-          setActiveLink(name);
+        if (section) {
+          const rect = section.getBoundingClientRect();
+          if (rect.top <= 120) {
+            setActiveLink(name);
+          }
         }
       });
     };
