@@ -44,7 +44,6 @@ const Footer = () => {
             <li>Contact Us</li>
           </ul>
         </div>
-
         <div className="">
           <h3 className="font-bold text-lg mb-4whitespace-pre-line">
             NEWSLETTER
