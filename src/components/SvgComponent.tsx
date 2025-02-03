@@ -4,6 +4,7 @@ interface WelcomeProps {
   width?: string | number;
   map?: string;
 }
+
 export const Logo: React.FC<WelcomeProps> = ({ className }) => {
   return (
     <>
@@ -394,7 +395,7 @@ export const Transport: React.FC<WelcomeProps> = ({
           fill="black"
           style={{
             fill: "black",
-            fillOpacity: 1, // camelCase property, numeric value without quotes
+            fillOpacity: 1,
           }}
         />
         <path
@@ -402,7 +403,7 @@ export const Transport: React.FC<WelcomeProps> = ({
           fill="black"
           style={{
             fill: "black",
-            fillOpacity: 1, // camelCase property, numeric value without quotes
+            fillOpacity: 1,
           }}
         />
         <path

@@ -8,7 +8,7 @@ import Features from "@/components/Features/Features";
 import HeroSection from "@/components/Hero section/HeroSection";
 import Services from "@/components/Services/Services";
 import Shipment from "@/components/Shipments/Shipment";
-import ScrollToTopArrow from "@/components/Scroll/Scroll";
+import ScrollToTopArrow from "@/components/Scroll/Index";
 
 export default function Home() {
   const [visibleSections, setVisibleSections] = useState<string[]>([]);
@@ -23,39 +23,40 @@ export default function Home() {
           }
         });
       },
-      { threshold: 0.3 }
+      { threshold: 0.2 }
     );
     const sections = document.querySelectorAll(".animate-section");
     sections.forEach((section) => observer.observe(section));
     return () => sections.forEach((section) => observer.unobserve(section));
   }, []);
-  const getVisible = (id: string) => visibleSections.includes(id);
+  const getVisibleSection = (id: string) => visibleSections.includes(id);
+  
   return (
     <div className="flex flex-col gap-7 max-w-screen-xl mx-auto ">
       <div
         id="home"
         className={`animate-section transition-all duration-500 ${
-          getVisible("home") ? "opacity-100" : "opacity-0"
+          getVisibleSection("home") ? "opacity-100" : "opacity-0"
         }`}
       >
         <HeroSection />
       </div>
       <div
         id="about"
-        className={`animate-section transition-transform duration-1000  ${
-          getVisible("about")
-            ? "translate-y-0 opacity-100"
-            : "translate-y-2 opacity-0"
+        className={`animate-section transition-transform duration-500  ${
+          getVisibleSection("about")
+            ? "translate-y-0"
+            : "translate-y-7 opacity-0"
         }`}
       >
         <AboutUs />
       </div>
       <div
         id="shipment"
-        className={`animate-section transition-transform duration-1000 ${
-          getVisible("shipment")
+        className={`animate-section transition-transform duration-500 ${
+          getVisibleSection("shipment")
             ? "translate-y-0 opacity-100"
-            : "translate-y-2 opacity-0"
+            : "translate-y-7 opacity-0"
         }`}
       >
         <Shipment />
@@ -63,17 +64,17 @@ export default function Home() {
       <div
         id="product"
         className={`animate-section transition-transform duration-500 mt-10 ${
-          getVisible("product")
+          getVisibleSection("product")
             ? "translate-y-0 opacity-100"
-            : "translate-y-2 opacity-0"
+            : "translate-y-7 opacity-0"
         }`}
       >
         <Services />
       </div>
       <div
         id="career"
-        className={`animate-section transition-transform duration-1000 mt-10 ${
-          getVisible("career")
+        className={`animate-section transition-transform duration-500 mt-10 ${
+          getVisibleSection("career")
             ? "translate-y-0 opacity-100"
             : "translate-y-2 opacity-0"
         }`}
@@ -82,25 +83,25 @@ export default function Home() {
       </div>
       <div
         id="contact"
-        className={`animate-section px-4 transition-transform duration-1000 ${
-          getVisible("contact")
+        className={`animate-section px-4 transition-transform duration-500 ${
+          getVisibleSection("contact")
             ? "translate-y-0 opacity-100"
-            : "translate-y-2 opacity-0"
+            : "translate-y-7 opacity-0"
         }`}
       >
         <ContectUs />
       </div>
       <div
         id="reviews"
-        className={`animate-section transition-transform duration-1000 ${
-          getVisible("reviews")
+        className={`animate-section transition-transform duration-500 ${
+          getVisibleSection("reviews")
             ? "translate-y-0 opacity-100"
-            : "translate-y-2 opacity-0"
+            : "translate-y-10 opacity-0"
         }`}
       >
         <ClientReview />
       </div>
-      <ScrollToTopArrow />
+      <ScrollToTopArrow/>
     </div>
   );
 }
