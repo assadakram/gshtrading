@@ -30,6 +30,7 @@ export default function Home() {
     return () => sections.forEach((section) => observer.unobserve(section));
   }, []);
   const getVisibleSection = (id: string) => visibleSections.includes(id);
+  
   return (
     <div className="flex flex-col gap-7 max-w-screen-xl mx-auto ">
       <div
