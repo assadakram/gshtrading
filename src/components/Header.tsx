@@ -5,17 +5,18 @@ import React, { useState, useEffect } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import { Logo } from "@/components/SvgComponent";
 
+const navLinks = [
+  { name: "Home", href: "#home" },
+  { name: "About Us", href: "#about" },
+  { name: "Products", href: "#product" },
+  { name: "Career", href: "#career" },
+  { name: "Contact Us", href: "#contact" },
+];
+
 const Header = () => {
   const [activeLink, setActiveLink] = useState("Home");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const navLinks = [
-    { name: "Home", href: "#home" },
-    { name: "About Us", href: "#about" },
-    { name: "Products", href: "#product" },
-    { name: "Career", href: "#career" },
-    { name: "Contact Us", href: "#contact" },
-  ];
 
   const handleNavClick = (href:string, name:string) => {
     setActiveLink(name);
@@ -42,7 +43,7 @@ const Header = () => {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [navLinks]);
 
   return (
     <header className="bg-white font-lexend py-4 text-lexend border-b border-black sticky top-0 z-50">
