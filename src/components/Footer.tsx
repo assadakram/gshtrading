@@ -1,10 +1,11 @@
 import { FaArrowUp, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { CallMeIcon, DistanceIcon, MailIcon } from "@/components/SvgComponent";
+
 const Footer = () => {
   return (
-    <footer className="bg-black font-lexend py-8  ">
+    <footer className="bg-black font-lexend py-8">
       <div className="max-w-screen-lg mx-auto px-8 gap-10 text-white flex flex-col md:flex-row justify-between">
-        <div className="uppercase ">
+        <div className="uppercase">
           <h3 className="font-bold text-lg mb-4">ADDRESS</h3>
           <ul className="md:space-y-7 text-sm space-y-3 ">
             <li className="flex items-center gap-2">
@@ -19,7 +20,7 @@ const Footer = () => {
             </li>
             <li className="flex items-center gap-2">
               <MailIcon className="text-primary" />
-              <span className="lowercase">saad.hk46@gmail.com</span>
+              <span>michael@gmail.com</span>
             </li>
           </ul>
         </div>
@@ -35,7 +36,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="uppercase">
-          <h3 className="font-bold text-lg mb-4 ">QUICK LINKS</h3>
+          <h3 className="font-bold text-lg mb-4">QUICK LINKS</h3>
           <ul className="space-y-2 text-sm">
             <li>Home</li>
             <li>About Us</li>
@@ -43,18 +44,17 @@ const Footer = () => {
             <li>Contact Us</li>
           </ul>
         </div>
-
         <div className="">
-          <h3 className="font-bold text-lg mb-4  whitespace-pre-line">
+          <h3 className="font-bold text-lg mb-4whitespace-pre-line">
             NEWSLETTER
           </h3>
-          <p className=" mb-4  text-sm ">
+          <p className=" mb-4text-sm ">
             Duis aute irure dolor in reprehenderit in <br /> voluptate velit
             esse cillum dolore eu fugiat <br />
             nulla pariatur.
           </p>
           <div className="flex">
-            <form className="flex  items-center border border-white rounded-md overflow-hidden">
+            <form className="flexitems-center border border-white rounded-md overflow-hidden">
               <input
                 type="email"
                 placeholder="Email"

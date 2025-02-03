@@ -1,49 +1,43 @@
-import agriculture from "@public/Services/Rectangle 12 (5).svg";
-import machinery from "@public/Services/Rectangle 12 (6).svg";
-import industrial from "@public/Services/Rectangle 12 (7).svg";
-import pigments from "@public/Services/Rectangle 12 (8).svg";
-import lubricant from "@public/Services/Rectangle 12 (9).svg";
-import detergents from "@public/Services/Rectangle 12 (10).svg";
 interface Services {
   name: string;
-  discription: string;
+  description: string;
   Image: string;
 }
 export const ServicesData: Services[] = [
   {
     name: "Agriculture Chemicals",
-    discription:
+    description:
       "We are importers and distributors of our agricultural products of all types. All the products we provide are of high quality and for specific purposes.",
-    Image: agriculture,
+    Image: "/Services/Rectangle 12 (5).svg",
   },
   {
     name: "Agriculture Machinery",
-    discription:
+    description:
       "We are importers and distributors of our agricultural products of all types. All the products we provide are of high quality and for specific purposes.",
-    Image: machinery,
+    Image: "/Services/Rectangle 12 (6).svg",
   },
   {
     name: "Industrial Chemicals",
-    discription:
+    description:
       "We are importers and distributors of our agricultural products of all types. All the products we provide are of high quality and for specific purposes.",
-    Image: industrial,
+    Image: "/Services/Rectangle 12 (7).svg",
   },
   {
     name: "Pigments",
-    discription:
+    description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since.",
-    Image: pigments,
+    Image: "/Services/Rectangle 12 (8).svg",
   },
   {
     name: "Lubricant",
-    discription:
+    description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since.",
-    Image: lubricant,
+    Image: "/Services/Rectangle 12 (9).svg",
   },
   {
     name: "Detergents",
-    discription:
+    description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since.",
-    Image: detergents,
+    Image: "/Services/Rectangle 12 (10).svg",
   },
 ];

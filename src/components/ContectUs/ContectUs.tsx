@@ -1,10 +1,11 @@
 import { CallIcon } from "@/components/SvgComponent";
-import Readmore from "@/components/Button/Readmore";
+import Readmore from "@/components/Button";
+
 const ContectUs = () => {
   return (
     <div
       id="contect-us"
-      className="flex max-w-screen-lg mx-auto  flex-col md:flex-row items-center justify-between md:px-8 py-10 bg-white font-lexend"
+      className="flex max-w-screen-lg mx-auto flex-col md:flex-row items-center justify-between md:px-8 py-10 bg-white font-lexend"
     >
       <div className="text-center md:text-left mb-8 md:mb-0">
         <h4 className="text-primary font-bold text-base uppercase ">
@@ -49,7 +50,7 @@ const ContectUs = () => {
               placeholder="Phone Number"
               className="border border-black focus:border-white p-2 h-10 focus:outline-none focus:ring-2 focus:text-primary "
             />
-            <select className="border border-black focus:border-white p-2 h-10 focus:outline-none focus:ring-2 focus:text-primary ">
+            <select className="border border-black focus:border-white p-2 h-10 focus:outline-none focus:ring-2  ">
               <option>Select a Freight</option>
               <option>Freight 1</option>
               <option>Freight 2</option>
