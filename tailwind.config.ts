@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -15,19 +16,12 @@ const config: Config = {
         foreground: "var(--foreground)",
         primary: "var(--primary)",
         secondary: "var(--secondary)",
-        shadow:"var(--shadow)",
-        backgroundShadow: "var(--backgroundShadow)",
-        
-       
+        shadow: "var(--shadow)",
       },
       boxShadow: {
         custom: "var(--shadow)",
-       
-       
       },
-      
     },
-    
   },
   plugins: [],
 };

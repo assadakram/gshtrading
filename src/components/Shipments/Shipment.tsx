@@ -21,7 +21,7 @@ const Shipment = () => {
         </p>
       </div>
       <div className="flex flex-wrap justify-center mt-10 md:justify-start gap-5 md:mt-10 ">
-        <div className="group flex flex-col items-center justify-center w-56 py-2 rounded-lg shadow-custom transform transition-all duration-700 hover:scale-105 hover:shadow-lg hover:bg-backgroundShadow">
+        <div className="group flex flex-col items-center justify-center w-56 py-2 rounded-lg shadow-custom transform transition-all duration-700 hover:scale-105 hover:shadow-lg hover:bg-primary">
           <DiversityIcon className="text-secondary object-cover transition-all duration-700" />
           <div className="mt-4 flex gap-2 text-sm font-bold text-secondary">
             100
@@ -30,7 +30,7 @@ const Shipment = () => {
             </p>
           </div>
         </div>
-        <div className="group flex flex-col items-center justify-center w-56 py-2 rounded-xl shadow-custom transform transition-all duration-700 hover:scale-105 hover:shadow-lg hover:bg-backgroundShadow">
+        <div className="group flex flex-col items-center justify-center w-56 py-2 rounded-xl shadow-custom transform transition-all duration-700 hover:scale-105 hover:shadow-lg hover:bg-primary">
           <ShipmentIcon className="text-secondary object-cover transition-all duration-700" />
           <div className="flex gap-2 mt-4 text-sm font-bold text-secondary">
             10
@@ -39,7 +39,7 @@ const Shipment = () => {
             </p>
           </div>
         </div>
-        <div className="group flex flex-col items-center justify-center w-56 py-2 bg-white rounded-lg shadow-custom transform transition-all duration-700 hover:scale-105 hover:shadow-lg hover:bg-backgroundShadow">
+        <div className="group flex flex-col items-center justify-center w-56 py-2 bg-white rounded-lg shadow-custom transform transition-all duration-700 hover:scale-105 hover:shadow-lg hover:bg-primary">
           <ReviewsIcon className="text-secondary object-cover transition-all duration-700" />
           <div className="flex mt-4 gap-2 text-sm font-bold text-secondary">
             4

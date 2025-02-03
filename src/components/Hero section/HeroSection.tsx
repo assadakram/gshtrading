@@ -1,9 +1,9 @@
 import { Transport } from "@/components/SvgComponent";
-import Readmore from "@/components/Button/Readmore";
+import Readmore from "@/components/Button";
 
 const HeroSection = () => {
   return (
-    <div className="flex flex-col md:flex-row  mt-12 md:-mt-6 items-center md:justify-between max-w-screen-lg mx-auto bg-white px-4 md:px-8">
+    <div className="flex flex-col md:flex-row mt-12 md:-mt-6 items-center md:justify-between max-w-screen-lg mx-auto bg-white px-4 md:px-8">
       <div className="flex flex-col space-y-4 font-lexend max-w-md ">
         <span className="text-primary font-medium text-sm uppercase">
           Transport & Logistics Solutions
@@ -16,7 +16,7 @@ const HeroSection = () => {
           We are transforming challenges into success.
         </p>
         <div className="flex justify-center md:justify-start">
-          <Readmore className="bg-blue-500" />
+          <Readmore className="bg-primary" />
         </div>
       </div>
       <div className="flex justify-end">

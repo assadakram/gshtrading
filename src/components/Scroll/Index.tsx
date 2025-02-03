@@ -3,10 +3,7 @@
 import React, { useEffect, useState } from "react";
 import { FaArrowUp, FaArrowDown } from "react-icons/fa";
 
-interface Animation {
-  className: string;
-}
-const ScrollToTopArrow: React.FC<Animation> = ({ className = "" }) => {
+const ScrollToTopArrow: React.FC = () => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
   const [scrollDirection, setScrollDirection] = useState<"up" | "down">("up");
   useEffect(() => {
@@ -40,7 +37,7 @@ const ScrollToTopArrow: React.FC<Animation> = ({ className = "" }) => {
       onClick={handleClick}
       className={`fixed bottom-8 right-8  ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-      }  bg-primary text-white w-12 h-12 flex items-center justify-center rounded-md shadow-md transition-all duration-300 ${className}`}
+      }  bg-primary text-white w-12 h-12 flex items-center justify-center rounded-md shadow-md transition-all duration-300`}
       aria-label={`Scroll ${
         scrollDirection === "up" ? "to top" : "to bottom"
       } `}

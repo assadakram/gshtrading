@@ -17,6 +17,16 @@ const Header = () => {
     { name: "Contact Us", href: "#contact" },
   ];
 
+  const handleNavClick = (href:string, name:string) => {
+    setActiveLink(name);
+    const section = document.querySelector(href);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+      window.history.pushState(null, "", href);
+    }
+    setIsMenuOpen(false);
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       navLinks.forEach(({ name, href }) => {
@@ -35,10 +45,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header
-      className="bg-white font-lexend py-4 text-lexend
- border-b border-black sticky top-0 z-50"
-    >
+    <header className="bg-white font-lexend py-4 text-lexend border-b border-black sticky top-0 z-50">
       <div className="max-w-screen-lg mx-auto px-8 flex items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
           <Logo />
@@ -52,7 +59,7 @@ const Header = () => {
         </button>
         <nav className="hidden md:flex md:items-center md:space-x-8 text-xs font-lexend font-normal uppercase">
           {navLinks.map(({ name, href }) => (
-            <a
+            <Link
               key={name}
               href={href}
               className={`relative transition-all duration-500 ${
@@ -65,7 +72,7 @@ const Header = () => {
                   activeLink === name ? "bg-secondary" : "bg-transparent"
                 }`}
               ></span>
-            </a>
+            </Link>
           ))}
         </nav>
       </div>
@@ -76,14 +83,10 @@ const Header = () => {
         >
           <nav className="flex flex-col items-center space-y-7 text-white text-lg font-lexend uppercase">
             {navLinks.map(({ name, href }) => (
-              <a
+              <button
                 key={name}
-                href={href}
-                className="relative transition-all duration-300 text-white"
-                onClick={() => {
-                  setActiveLink(name);
-                  setIsMenuOpen(false);
-                }}
+                onClick={() => handleNavClick(href, name)}
+                className="relative transition-all duration-300 text-white uppercase"
               >
                 {name}
                 <span
@@ -91,7 +94,7 @@ const Header = () => {
                     activeLink === name ? "bg-secondary" : "bg-transparent"
                   }`}
                 ></span>
-              </a>
+              </button>
             ))}
           </nav>
         </div>

@@ -9,10 +9,9 @@ html {
 :root {
   --background: #ffffff;
   --foreground: #000000;
-  --primary: #0088ff;
+  --primary: #0ab6f0;
   --secondary: #fa1b1b;
   --shadow: 0 0px 5px #00000066;
-  --backgroundShadow: #52525b;
 }
 
 body {
