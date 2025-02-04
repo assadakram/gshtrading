@@ -3,8 +3,8 @@ import Readmore from "@/components/Button";
 
 const HeroSection = () => {
   return (
-    <div className="flex flex-col md:flex-row mt-12 md:-mt-6 items-center md:justify-between max-w-screen-lg mx-auto bg-white px-4 md:px-8">
-      <div className="flex flex-col space-y-4 font-lexend max-w-md ">
+    <div className="flex flex-col md:flex-row md:-mt-6 items-center md:justify-between max-w-screen-lg mx-auto bg-white px-4 md:px-8">
+      <div className="flex order-2 md:order-1 flex-col space-y-4 font-lexend max-w-md ">
         <span className="text-primary font-medium text-sm uppercase">
           Transport & Logistics Solutions
         </span>
@@ -19,7 +19,7 @@ const HeroSection = () => {
           <Readmore className="bg-primary" />
         </div>
       </div>
-      <div className="flex justify-end">
+      <div className="order-1 md:order-2 flex justify-end">
         <Transport className="text-primary object-cover" />
       </div>
     </div>
