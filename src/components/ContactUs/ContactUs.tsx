@@ -1,7 +1,8 @@
 import { CallIcon } from "@/components/SvgComponent";
 import Readmore from "@/components/Button";
+import { freightOptions } from "@/components/SvgComponent";
 
-const ContectUs = () => {
+const ContactUs: React.FC = () =>{
   return (
     <div
       id="contect-us"
@@ -50,10 +51,13 @@ const ContectUs = () => {
               placeholder="Phone Number"
               className="border border-black focus:border-white p-2 h-10 focus:outline-none focus:ring-2 focus:text-primary "
             />
-            <select className="border border-black focus:border-white p-2 h-10 focus:outline-none focus:ring-2  ">
-              <option>Select a Freight</option>
-              <option>Freight 1</option>
-              <option>Freight 2</option>
+            <select className="border border-black focus:border-white p-2 h-10 focus:outline-none focus:ring-2">
+              <option value="">Select a Freight</option>
+              {freightOptions.map((option, index) => (
+                <option key={index} value={option}>
+                  {option}
+                </option>
+              ))}
             </select>
           </div>
           <textarea
@@ -66,4 +70,4 @@ const ContectUs = () => {
     </div>
   );
 };
-export default ContectUs;
+export default ContactUs;

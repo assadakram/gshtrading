@@ -3,12 +3,12 @@
 import React, { useState, useEffect } from "react";
 import AboutUs from "@/components/About us/AboutUs";
 import ClientReview from "@/components/ClientReviews/ClientReview";
-import ContectUs from "@/components/ContectUs/ContectUs";
 import Features from "@/components/Features/Features";
 import HeroSection from "@/components/Hero section/HeroSection";
 import Services from "@/components/Services/Services";
 import Shipment from "@/components/Shipments/Shipment";
-import ScrollToTopArrow from "@/components/Scroll/Index";
+import ScrollToTopArrow from "@/components/Scroll";
+import ContactUs from "@/components/ContactUs/ContactUs";
 
 export default function Home() {
   const [visibleSections, setVisibleSections] = useState<string[]>([]);
@@ -89,7 +89,7 @@ export default function Home() {
             : "translate-y-7 opacity-0"
         }`}
       >
-        <ContectUs />
+        <ContactUs />
       </div>
       <div
         id="reviews"

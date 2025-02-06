@@ -79,7 +79,7 @@ const Header = () => {
       </div>
       {isMenuOpen && (
         <div
-          className="md:hidden fixed inset-0 bg-black bg-opacity-60 z-30 flex items-center justify-center"
+          className="md:hidden fixed inset-0 bg-black bg-opacity-90  flex items-center justify-center"
           onClick={() => setIsMenuOpen(false)}
         >
           <nav className="flex flex-col items-center space-y-7 text-white text-lg font-lexend uppercase">

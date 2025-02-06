@@ -9,7 +9,7 @@ const ClientReview = () => {
         <span className="text-lg text-secondary font-bold">TESTIMONIAL</span>
         <span className="uppercase text-3xl font-bold">Our Clients Say!</span>
       </div>
-      <div className="flex flex-wrap gap-8">
+      <div className="flex flex-wrap justify-center gap-8">
         {testimonials.map((testimonial, index) => (
           <div
             key={index}

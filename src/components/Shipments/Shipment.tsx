@@ -22,8 +22,8 @@ const Shipment = () => {
       </div>
       <div className="flex flex-wrap justify-center mt-10 md:justify-start gap-5 md:mt-10 ">
         <div className="group flex flex-col items-center justify-center w-56 py-2 rounded-lg shadow-custom transform transition-all duration-700 hover:scale-105 hover:shadow-lg hover:bg-primary">
-          <DiversityIcon className="text-secondary object-cover transition-all duration-700" />
-          <div className="mt-4 flex gap-2 text-sm font-bold text-secondary">
+          <DiversityIcon className="text-secondary object-cover transition-all duration-700 group-hover:text-white" />
+          <div className="mt-4 flex gap-2 text-sm font-bold text-secondary group-hover:text-white">
             100
             <p className="text-sm font-medium text-gray-800 group-hover:text-white">
               Happy Clients
@@ -31,8 +31,8 @@ const Shipment = () => {
           </div>
         </div>
         <div className="group flex flex-col items-center justify-center w-56 py-2 rounded-xl shadow-custom transform transition-all duration-700 hover:scale-105 hover:shadow-lg hover:bg-primary">
-          <ShipmentIcon className="text-secondary object-cover transition-all duration-700" />
-          <div className="flex gap-2 mt-4 text-sm font-bold text-secondary">
+          <ShipmentIcon className="text-secondary object-cover transition-all duration-700 group-hover:text-white" />
+          <div className="flex gap-2 mt-4 text-sm font-bold text-secondary group-hover:text-white">
             10
             <p className="text-sm font-medium text-gray-800 group-hover:text-white">
               Complete Shipments
@@ -40,8 +40,8 @@ const Shipment = () => {
           </div>
         </div>
         <div className="group flex flex-col items-center justify-center w-56 py-2 bg-white rounded-lg shadow-custom transform transition-all duration-700 hover:scale-105 hover:shadow-lg hover:bg-primary">
-          <ReviewsIcon className="text-secondary object-cover transition-all duration-700" />
-          <div className="flex mt-4 gap-2 text-sm font-bold text-secondary">
+          <ReviewsIcon className="text-secondary object-cover transition-all duration-700 group-hover:text-white" />
+          <div className="flex mt-4 gap-2 text-sm font-bold text-secondary group-hover:text-white">
             4
             <p className="text-sm font-medium text-gray-800 group-hover:text-white">
               Customer Reviews
