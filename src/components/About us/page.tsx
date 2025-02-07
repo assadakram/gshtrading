@@ -1,5 +1,5 @@
 import { Welcome } from "@/components/SvgComponent";
-import Readmore from "@/components/Button";
+import Readmore from "@/components/Button/page";
 
 const AboutUs = () => {
   return (

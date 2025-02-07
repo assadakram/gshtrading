@@ -1,10 +1,10 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import AboutUs from "@/components/About us/AboutUs";
+import AboutUs from "@/components/About us/page";
 import ClientReview from "@/components/ClientReviews/ClientReview";
 import Features from "@/components/Features/Features";
-import HeroSection from "@/components/Hero section/HeroSection";
+import HeroSection from "@/components/Section/HeroSection";
 import Services from "@/components/Services/Services";
 import Shipment from "@/components/Shipments/Shipment";
 import ScrollToTopArrow from "@/components/Scroll";

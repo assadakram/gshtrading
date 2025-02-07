@@ -1,9 +1,9 @@
 import { Transport } from "@/components/SvgComponent";
-import Readmore from "@/components/Button";
+import Readmore from "@/components/Button/page";
 
 const HeroSection = () => {
   return (
-    <div className="flex flex-col-reverse md:flex-row md:-mt-6 items-center md:justify-between max-w-screen-lg mx-auto bg-white px-4 md:px-8">
+    <section className="flex flex-col-reverse md:flex-row md:-mt-6 items-center md:justify-between max-w-screen-lg mx-auto bg-white px-4 md:px-8">
       <div className="flex flex-col space-y-4 font-lexend max-w-md">
         <span className="text-primary font-medium text-sm uppercase">
           Transport & Logistics Solutions
@@ -22,7 +22,7 @@ const HeroSection = () => {
       <div className="flex justify-end">
         <Transport className="text-primary object-cover" />
       </div>
-    </div>
+    </section>
   );
 };
 

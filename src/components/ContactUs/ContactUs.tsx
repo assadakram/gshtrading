@@ -1,5 +1,5 @@
 import { CallIcon } from "@/components/SvgComponent";
-import Readmore from "@/components/Button";
+import Readmore from "@/components/Button/page";
 import { freightOptions } from "@/components/SvgComponent";
 
 const ContactUs: React.FC = () =>{
