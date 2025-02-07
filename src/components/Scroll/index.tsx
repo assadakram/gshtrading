@@ -42,9 +42,9 @@ const ScrollToTopArrow: React.FC = () => {
       aria-label={`Scroll ${scrollDirection === "up" ? "to top" : "to bottom"}`}
     >
       {scrollDirection === "up" ? (
-        <FaArrowUp className="w-5 h-5" />
+        <FaArrowUp />
       ) : (
-        <FaArrowDown className="w-5 h-5" />
+        <FaArrowDown />
       )}
     </button>
   );
