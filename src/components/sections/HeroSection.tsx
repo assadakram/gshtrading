@@ -1,5 +1,5 @@
 import { Transport } from "@/components/SvgComponent";
-import Readmore from "@/components/Button/page";
+import Readmore from "@/components/button";
 
 const HeroSection = () => {
   return (

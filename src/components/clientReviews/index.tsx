@@ -1,4 +1,4 @@
-import { testimonials } from "@/components/Data/ClientsData";
+import { testimonials } from "@/components/data/Clients";
 import Image from "next/image";
 import { QuoteIcon } from "@/components/SvgComponent";
 
