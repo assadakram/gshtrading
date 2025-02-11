@@ -3,8 +3,14 @@
 import React, { useEffect, useState } from "react";
 import { FaArrowUp, FaArrowDown } from "react-icons/fa";
 
+enum ScrollDirection {
+  Up = "up",
+  Down = "down",
+}
+
 const ScrollToTopArrow = () => {
-  const [scrollDirection, setScrollDirection] = useState<"up" | "down">("down");
+  
+  const [scrollDirection, setScrollDirection] = useState<ScrollDirection>(ScrollDirection.Down);
   const [isVisible, setIsVisible] = useState<boolean>(false);
 
   useEffect(() => {
@@ -12,7 +18,7 @@ const ScrollToTopArrow = () => {
       const currentScrollPos =
         window.scrollY || document.documentElement.scrollTop;
       const halfScreen = document.documentElement.scrollHeight / 3;
-      setScrollDirection(currentScrollPos > halfScreen ? "up" : "down");
+      setScrollDirection(currentScrollPos > halfScreen ? ScrollDirection.Up : ScrollDirection.Down);
       setIsVisible(currentScrollPos > 150);
     };
 
@@ -23,7 +29,7 @@ const ScrollToTopArrow = () => {
   }, []);
 
   const handleClick = (): void => {
-    if (scrollDirection === "up") {
+    if (scrollDirection === ScrollDirection.Up) {
       window.scrollTo({ top: 0, behavior: "smooth" });
     } else {
       window.scrollTo({
@@ -39,9 +45,9 @@ const ScrollToTopArrow = () => {
       className={`fixed bottom-8 right-8 bg-primary text-white w-12 h-12 flex items-center justify-center rounded-md shadow-md transition-all duration-300 ${
         isVisible ? "opacity-100" : "opacity-0 pointer-events-none"
       }`}
-      aria-label={`Scroll ${scrollDirection === "up" ? "to top" : "to bottom"}`}
+      aria-label={`Scroll ${scrollDirection === ScrollDirection.Up ? "to top" : "to bottom"}`}
     >
-      {scrollDirection === "up" ? (
+      {scrollDirection === ScrollDirection.Up ? (
         <FaArrowUp />
       ) : (
         <FaArrowDown />

@@ -6,7 +6,7 @@ import {
   Services,
   Shipment,
   HeroSection,
-} from "@/components/imports";
+} from "@/components";
 
 export const sectionsConfig = [
   {
