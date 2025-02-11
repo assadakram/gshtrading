@@ -8,7 +8,7 @@ enum ScrollDirection {
   Down = "down",
 }
 
-const ScrollToTopArrow = () => {
+const ScrollToTopArrow: React.FC = () => {
   
   const [scrollDirection, setScrollDirection] = useState<ScrollDirection>(ScrollDirection.Down);
   const [isVisible, setIsVisible] = useState<boolean>(false);
