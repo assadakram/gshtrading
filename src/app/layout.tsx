@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Lexend } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
 const lexend = Lexend({
   variable: "--font-lexend",
   subsets: ["latin"],
-  display: "swap", 
+  display: "swap",
 });
 export default function RootLayout({
   children,
@@ -33,10 +34,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable}  ${lexend.variable} antialiased min-w-fit  `}
       >
         <Header />
-        <main className="mb-20" >{children}</main>
-        <Footer/>
-        
-        
+        <main className="mb-20">{children}</main>
+        <Footer />
       </body>
     </html>
   );

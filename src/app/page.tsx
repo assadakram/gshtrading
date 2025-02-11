@@ -1,7 +1,7 @@
 "use client";
 
-import useVisibleSections from "@/app/custom hooks/useVisibleSections";
-import ScrollToTopArrow from "@/components/scroll/Index";
+import useVisibleSections from "@/app/useVisibleSections";
+import ScrollToTopArrow from "@/components/scroll";
 import { sectionsConfig } from "@/components/data/sectionsDisplay";
 
 export default function Home() {
