@@ -2048,3 +2048,27 @@ export const ServicesIcon: React.FC<WelcomeProps> = ({ className }) => {
     </>
   );
 };
+
+export const freightOptions: string[] = [
+  "Freight 1",
+  "Freight 2",
+  "Freight 3",
+  "Freight 4",
+];
+
+export const products: string[] = [
+  "Agriculture Chemicals",
+  "Industrial Chemicals",
+  "Pigments",
+  "Lubricant",
+  "Detergent",
+  "Tyres",
+];
+
+export const quickLinks: string[] = [
+  "Home",
+  "About Us",
+  "Careers",
+  "Contact Us",
+];
+

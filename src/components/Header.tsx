@@ -43,7 +43,7 @@ const Header = () => {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [navLinks]);
+  }, []);
 
   return (
     <header className="bg-white font-lexend py-4 text-lexend border-b border-black sticky top-0 z-50">
@@ -79,7 +79,7 @@ const Header = () => {
       </div>
       {isMenuOpen && (
         <div
-          className="md:hidden fixed inset-0 bg-black bg-opacity-60 z-30 flex items-center justify-center"
+          className="md:hidden fixed inset-0 bg-black bg-opacity-90  flex items-center justify-center"
           onClick={() => setIsMenuOpen(false)}
         >
           <nav className="flex flex-col items-center space-y-7 text-white text-lg font-lexend uppercase">

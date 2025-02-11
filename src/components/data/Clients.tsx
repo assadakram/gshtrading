@@ -1,6 +1,5 @@
-import Ellips from "@public/Testimonals/Ellipse 4.svg";
-import Ellips2 from "@public/Testimonals/Ellipse 4 (1).svg";
-import Ellips3 from "@public/Testimonals/Ellipse 4 (2).svg";
+import { Ellips, Ellips2, Ellips3 } from "@public/testimonals";
+
 interface Testimonial {
   name: string;
   company: string;
