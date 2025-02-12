@@ -43,7 +43,7 @@ const Header = () => {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [setActiveLink]);
 
   return (
     <header className="bg-white font-lexend py-4 text-lexend border-b border-black sticky top-0 z-50">
