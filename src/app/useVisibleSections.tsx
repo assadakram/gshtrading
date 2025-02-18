@@ -23,7 +23,7 @@ const useVisibleSections = () => {
     sections.forEach((section) => observer.observe(section));
 
     return () => sections.forEach((section) => observer.unobserve(section));
-  }, []);
+  }, [setVisibleSections]);
 
   const getVisibleSection = (id: string) => visibleSections.includes(id);
 

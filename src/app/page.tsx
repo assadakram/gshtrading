@@ -1,8 +1,8 @@
 "use client";
 
 import useVisibleSections from "@/app/useVisibleSections";
+import { sectionsConfig } from "@/components/data/SectionsDisplay";
 import ScrollToTopArrow from "@/components/scroll";
-import { sectionsConfig } from "@/components/data/sectionsDisplay";
 
 export default function Home() {
   const { getVisibleSection } = useVisibleSections();

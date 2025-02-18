@@ -26,7 +26,7 @@ const ScrollToTopArrow: React.FC = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [setScrollDirection, setIsVisible]);
 
   const handleClick = (): void => {
     if (scrollDirection === ScrollDirection.Up) {

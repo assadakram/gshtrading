@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Arrow from "@public/arrow_circle_right.svg";
 import {motion} from "motion/react"
+
 interface ReadmoreProps {
   className?: string;
   label?: string;
