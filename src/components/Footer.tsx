@@ -1,6 +1,5 @@
 import { FaArrowUp, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { CallMeIcon, DistanceIcon, MailIcon } from "@/components/SvgComponent";
-import { products, quickLinks } from "@/components/SvgComponent";
+import { CallMeIcon, DistanceIcon, MailIcon, products, quickLinks } from "@/components/SvgComponent";
 
 const Footer = () => {
   const currentYear: number = new Date().getFullYear();
