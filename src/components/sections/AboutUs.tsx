@@ -1,7 +1,7 @@
 import { Welcome } from "@/components/SvgComponent";
 import Readmore from "@/components/button";
 
-const AboutUs = () => {
+export const AboutUs = () => {
   return (
     <section
       id="about-us"
@@ -32,4 +32,4 @@ const AboutUs = () => {
     </section>
   );
 };
-export default AboutUs;
+

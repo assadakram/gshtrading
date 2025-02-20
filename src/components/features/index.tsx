@@ -5,7 +5,7 @@ import {
   WorldIcon,
 } from "@/components/SvgComponent";
 
-const Features = () => {
+export const Features = () => {
   return (
     <section
       id="Features"
@@ -52,4 +52,4 @@ const Features = () => {
   );
 };
 
-export default Features;
+

@@ -2,7 +2,7 @@ import { testimonials } from "@/components/data/Clients";
 import Image from "next/image";
 import { QuoteIcon } from "@/components/SvgComponent";
 
-const ClientReview = () => {
+export const ClientReview = () => {
   return (
     <div className="font-lexend max-w-screen-lg mx-auto md:flex md:flex-col px-4 md:px-0 md:gap-10 bg-white">
       <div className="flex flex-col items-center gap-2 md:gap-4 mb-10">
@@ -45,4 +45,4 @@ const ClientReview = () => {
   );
 };
 
-export default ClientReview;
+

@@ -4,7 +4,7 @@ import {
   ShipmentIcon,
 } from "@/components/SvgComponent";
 
-const Shipment = () => (
+export const Shipment = () => (
     <div className="max-w-screen-lg mx-auto flex px-4 md:px-8 flex-col md:gap-8 md:flex-row items-start md:items-center justify-between font-lexend">
       <div className="md:w-1/2 flex flex-col gap-4 md:gap-0">
         <p className="text-primary font-bold uppercase text-center md:text-start">
@@ -51,4 +51,3 @@ const Shipment = () => (
     </div>
   );
 
-export default Shipment;
