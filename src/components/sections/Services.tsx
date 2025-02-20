@@ -5,7 +5,7 @@ import { ServicesData } from "@/components/data/Services";
 import Image from "next/image";
 import Readmore from "@/components/button";
 
-const Services = () => {
+export const Services = () => {
   const [services] = useState(ServicesData);
 
   return (
@@ -46,5 +46,3 @@ const Services = () => {
     </section>
   );
 };
-
-export default Services;

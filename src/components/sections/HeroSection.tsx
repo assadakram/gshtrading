@@ -1,7 +1,7 @@
 import { Transport } from "@/components/SvgComponent";
 import Readmore from "@/components/button";
 
-const HeroSection = () => {
+export const HeroSection = () => {
   return (
     <section className="flex flex-col-reverse md:flex-row md:-mt-6 items-center md:justify-between max-w-screen-lg mx-auto bg-white px-4 md:px-8">
       <div className="flex flex-col space-y-4 font-lexend max-w-md">
@@ -26,4 +26,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+

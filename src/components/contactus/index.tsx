@@ -2,7 +2,7 @@ import { CallIcon } from "@/components/SvgComponent";
 import Readmore from "@/components/button";
 import { freightOptions } from "@/components/SvgComponent";
 
-const ContactUs: React.FC = () =>{
+export const ContactUs = () => {
   return (
     <div
       id="contect-us"
@@ -70,4 +70,4 @@ const ContactUs: React.FC = () =>{
     </div>
   );
 };
-export default ContactUs;
+
